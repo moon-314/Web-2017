@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang='en'>
+
+<head>
+  <meta charset="utf-8" />
+  <title>마 ! 함 해보입시다</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- 주소창 icon -->
+</head>
+
+<style>
+  body {
+    background: url(intro배경1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: NanumGothic;
+    src: url(NanumFont_TTF_ALL/NanumGothic.ttf) format('truetype');
+  }
+
+  div {
+    position: relative;
+    padding: 10px 0;
+    color: #2d2c2d;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    width: auto;
+    top: 200px;
+    margin: auto;
+  }
+
+  .sign {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    border: 1px solid ##F5DA81;
+    background: #fff;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    opacity: 0.75;
+  }
+
+  .p1 {
+    margin-top: -5px;
+    font-size: 50px;
+    color: gray;
+  }
+
+  .f {
+    overflow: hidden;
+    width: auto;
+  }
+</style>
+
+<body>
+
+  <div class="sign">
+    <p class="p1">sign</p>
+    <form>
+      <p class="f"><input type="text" id="ID" name="ID" placeholder="ID" autofocus required></p>
+      <p class="f"><input type="password" id="pw" name="PASSWORD" placeholder="password" required></p>
+      <label id="putcheck" style="color:red;"></label>
+      <br></br>
+      <input type="button" value="로그인" onclick="put()">
+      <input type="reset" value="다시쓰기">
+      <br></br>
+      <input type="button" value="GUEST" onclick="location.href='main.html'" title="Guest는 여기로" style="height:25px">
+      <input type="button" value="회원가입" onclick="location.href='회원가입.html'">
+    </form><!-- 폼 작성 -->
+
+  </div>
+
+  <script type="text/javascript">
+    function put() {
+      var id = document.getElementById("ID").value;
+      var pw = document.getElementById("pw").value;
+
+      if (id == "") {
+        document.getElementById("putcheck").innerHTML = '아이디를 입력하세요.';
+      } else if (pw == "") {
+        document.getElementById("putcheck").innerHTML = '비밀번호를 입력하세요.';
+      } else {
+        window.location.href = "main.html";
+      }
+
+    }
+  </script>
+</body>
+
+</html>

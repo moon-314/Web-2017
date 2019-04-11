@@ -1,0 +1,421 @@
+<!doctype html>
+
+<html lang='en'>
+<head>
+  <meta charset="utf-8"/>
+  <title>Îßà ! Ìï® Ìï¥Î≥¥ÏûÖÏãúÎã§</title>
+  <link rel="shortcut icon" href="favicon.ico"> <!-- Ï£ºÏÜåÏ∞Ω icon -->
+</head>
+
+<style>
+
+  div
+  {
+    margin:0 0 10px;
+    padding:10px 0;
+    color:#2d2c2d;
+    font-family:Tahoma;
+    font-size:14px;
+    font-weight:bold;
+    background: url(Î∞∞Í≤Ω1.jpg) no-repeat center center fixed;
+  }
+
+  body
+  {
+    font-family: Tahoma;
+    margin: 0px;
+    padding: 50px;
+    background: #e1e1e1;
+  }
+
+  .logo
+  {
+      position: relative;
+      width : auto;
+      color : white;
+      text-align: center;
+      background-color: #f7f7f7;
+      padding:10px;
+      font-size: 60px;
+      border:1px solid #bdbdbd;
+      opacity: 0.9;
+  }
+
+  .container
+  {
+    *display:inline-block;_float:left;_width:100%;
+    padding-right:200px;
+    border:2px solid #bfbfbf;
+    background:#e5e5e5;
+    position:relative;
+    padding-left:10px;
+  }
+
+  .container:after
+  {
+    display:block;
+    clear:both;
+    content:''
+  }
+
+  .content
+  {
+    position:relative;
+    float:right;
+    width:100%;
+    margin-right: -192px;
+    height:1825px;
+    margin-top:10px;
+    border:1px solid #bdbdbd;
+    background:#fff;
+    text-align:center;
+    overflow:auto;
+  }
+
+  .sign
+  {
+    float:left;
+    position:relative;
+    width:185px;
+    margin-top:10px;
+    background:#e5e5e5;
+    text-align:center;
+    margin-left : -3px;
+  }
+
+  .footer
+  {
+    width:100%;
+    background-color: #fff;
+    width:auto;
+    padding:10px;
+    border:2px solid #bdbdbd;
+    font-family:Tahoma;
+    font-weight: 300;
+    height: 150px;
+    overflow:hidden;
+  }
+
+  .footer img
+  {
+    margin-left: 30px;
+  }
+
+  .shadow
+  {
+    text-shadow: 2px 2px 2px orange, 0 0 25px #FCA205, 0 0 5px #E96400;
+  }
+
+  .menu {
+    position: relative;
+    height: 44px;
+    background: #2d2c2d;
+    width: auto;
+    text-align: center;
+  }
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+  }
+  .menu > ul > li {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  .menu ul li a {
+    display: block;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+  }
+  .menu > ul > li > a {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition: color 0.25s ease-out;
+    -moz-transition: color 0.25s ease-out;
+    -ms-transition: color 0.25s ease-out;
+    -o-transition: color 0.25s ease-out;
+    transition: color 0.25s ease-out;
+  }
+  .menu > ul > li.sub > a
+  {
+  padding-right: 32px;
+  }
+.menu > ul > li:hover > a {
+  color: #ffffff;
+}
+.menu li.sub::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.menu > ul > li.sub::after {
+  right: 10px;
+  top: 20px;
+  border: 5px solid transparent;
+  border-top-color: #7a8189;
+}
+.menu > ul > li:hover::after {
+  border-top-color: #ffffff;
+}
+.menu ul ul {
+  position: absolute;
+  left: -9999px;
+  top: 70px;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease, top .25s ease;
+  -moz-transition: opacity .3s ease, top .25s ease;
+  -ms-transition: opacity .3s ease, top .25s ease;
+  -o-transition: opacity .3s ease, top .25s ease;
+  transition: opacity .3s ease, top .25s ease;
+  z-index: 1000;
+}
+.menu ul ul ul {
+  top: 37px;
+  padding-left: 5px;
+}
+.menu ul ul li {
+  position: relative;
+}
+.menu > ul > li:hover > ul {
+  left: auto;
+  top: 44px;
+  opacity: 1;
+}
+
+.menu ul ul li a {
+  width: 130px;
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px 20px;
+  font-size: 12px;
+  color: #9ea2a5;
+  background: #ffffff;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -ms-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
+}
+
+.menu ul ul li:hover > a {
+  background: #f2f2f2;
+  color: #8c9195;
+}
+.menu ul li :hover{
+  background-color:#111;
+}
+
+img
+{
+  float : left;
+  margin : 0 0 20px 20px ;
+}
+
+.sign ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 185px;
+    background-color: #f1f1f1;
+}
+
+.sign li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.sign li a.active {
+    background-color:#FE9A2E;
+    color: white;
+}
+
+.sign li a:hover:not(.active) {
+    background-color: #A4A4A4;
+    color: white;
+}
+
+iframe
+{
+  margin-top: 30px;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #FE9A2E;
+    color: white;
+}
+
+.pagination a:hover:not(.active)
+ {
+   background-color: #ddd;
+ }
+
+.bu
+{
+  background-color: #FE9A2E;
+  text-decoration: none;
+  border: none;
+  color:white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  cursor:pointer;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family:NanumGothic;
+    src:url(NanumFont_TTF_ALL/NanumGothic.ttf) format('truetype');
+}
+.bu:hover
+{
+  background-color: #E6E6E6;
+  color:black;
+}
+
+#top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#FE9A2E   ;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#top:hover {
+  background-color: #555;
+}
+
+</style>
+
+<body>
+
+<!--ui object -->
+<div class="logo">
+<p class="shadow">Lotte Giant</p>
+</div>
+
+<!--menu -->
+<div class='menu'>
+  <ul>
+    <li>
+      <a href='main.html'>Home</a>
+    </li>
+    <li class='active sub'>
+      <a href='giant.html'>Giant</a>
+      <ul>
+        <li >
+          <a href='about.html'>About</a>
+            <li>
+              <a href='profile.html'>Profile</a>
+            </li>
+          </li>
+          </ul>
+    </li>
+    <li class='active sub'>
+					<a href="player.html">player</a>
+					<ul>
+            <li>
+							<a href='picher.html'>Picher</a>
+								<li>
+									<a href='catcher.html'>Catcher</a>
+                  <li>
+  									<a href='infield.html'>Infield</a>
+                    <li>
+    									<a href='outfield.html'>Outfield</a>
+              </li>
+            </li>
+          </li>
+        </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+      <a href="video.html">Video</a>
+      <ul>
+        <li>
+          <a href="highlight.html">Highlight</a>
+        <li>
+          <a href="rewind.html">Rewind</a>
+          <li>
+            <a href="gianttv.html">Giant TV</a>
+          </li>
+          </li>
+          </li>
+        </ul>
+    </li>
+    <li>
+  <a href="fa.html">FA</a>
+</li>
+    <li>
+      <a href='sns.html'>SNS</a>
+    </li>
+  </ul>
+</div>
+
+<!--//menu -->
+<!--container -->
+<div class="container">
+<p></p>
+<!--content -->
+<div class="content">
+  <iframe width="96%" height="400"
+    src="https://youtube.com/embed/3VHLLoNAYeE?&autoplay=0" frameborder="0">
+    </iframe>
+    <br></br>
+    <iframe width="96%" height="400"
+      src="https://youtube.com/embed/eg_E7bEv3Dk?&autoplay=0" frameborder="0">
+      </iframe>
+        <br></br>
+      <iframe width="96%" height="400"
+        src="https://youtube.com/embed/3PHYvLgssE4?&autoplay=0" frameborder="0">
+        </iframe>
+        <iframe width="96%" height="400"
+          src="https://youtube.com/embed/E8XYpvlGSVU?&autoplay=0" frameborder="0">
+          </iframe>
+  <br></br>
+  <span class="pagination">
+  <a href="highlight.html">&laquo;</a>
+  <a href="highlight.html" >1</a>
+  <a href="hi2.html">2</a>
+  <a href="hi3.html"  class="active">3</a>
+  <a href="hi4.html">4</a>
+  <a href="hi5.html">5</a>
+  <a href="hi6.html">6</a>
+  <a href="hi21.html">&raquo;</a>
+</span>
+</div>
+<!--//content -->
+<!--sign -->
+<div class="sign">
+  <ul>
+    <li>
+      <a class="active" hx¡æõãﬁ‹~Ò≈¡Ôﬂx¸·∑3œ~ü}˛ÁÏã?'ˇ<zˇ€¡€üvﬂx∑ÁŒßcèû}ˆ˜¸≥øg˝:ı‡«ô«øŒ=˝sˆÈÔ”O~{Ù„ÉÔ˚Ô}€u˚Ûñ´ÔVù~9{◊Ì¶Ÿªíä˚›Rc≤ãÚÛ2í”‚#£√íb¬Sb£Ä˝Ö¨‰§º¥¥‚ÏÏ˙“‚…≠S:€¶v∑œù‘øp⁄‰˘S'-ö1Hπs&É–¨	Ω”{ª&wµMÓlÎÔlk™≠*ÃŒHOJLâèIäçJéãŒHäœOKŒOK)ÃÃÃOOOâçãçàˆÙvÛrrp≥µv≤¥∞73µ71±31u∞∂qÛÙ
+éè≠,≠ö?cÊ∆K6.ôªvŒƒ≈öÁw’Mk¨LÙVê‡e‰PïÃéˆﬂ2ªgœÏﬁÕ”∫äcC’$Ñ˘ÿò∏¿ùNfNNÏYÄ{X∫úÃh=LÏk¿ë ˚∞À¨    ˇˇ˙ˇåÇQ0
+F¡(£`»"U66Nhoü⁄’5}bˇúYìÁ/öµt≈ÇU´ÆY∑l˝Ê5[vlÿægÀÓ√;˜ﬂ{ÙÅ√Áèøt¸‰ÂßÆû:sÌÙŸÎgŒ›8{≈Øú<}˛Ë±s«é›∏|Ò˘ìGﬂæ|˙˝˚Áüøø˛¸˝˝ÎÔÔ?ˇ˛˛˜–˛øèΩ⁄µ˜Ùéó∂ªΩÛ‹ì£w?üz˙˚ÿ£_{o}Ÿ~Â˝÷KØw\~µ˜Í´]üÓº¸bˇ≠∑GÓ>˘‰˚ÈgøŒæ¯sÊ˘Ôcèø}¸˝ƒìüÁû˝æ¯¸ÔÖgøœ>˘uÊ…œ≥œ~üÒ˜¸Àg^˛=˘¸˜ë'ø<¸±Îˆ◊ıﬂ/9˙t¬ö3ïΩkíÛ€K+€€ö€ök ´KrÀÚ3À≤ ≤´ãÛÎÀKõ´+ªfÙu≠ú?s’ÇYkŒŸΩaı—][ÔÿºÀ˙›ÎWmZæh›‚yÎÕ]1g˙¢ÈìÊMÍù’ﬂ›ﬁ‘TíüüûúD9ÈÂ%E≠çıì˚{Lõºt÷ÙesÁ,ú9cJOoWss]EeY~QNFVfjzjRrRBR|lBll||\Bb|bJ||AVFgs›íπS6-üΩcÂÏµ≥ªÁv’ŒÍ®Ø/ ¥µ–·dïï‡M˜Ÿ2ªÔ¿º˛Ì3z™R¢ud≈˘Ÿò∏Ÿò89π∏òππX0/++/'‚ãÛs≥	∞IdA ^‰„Õ›£`å™    ˇˇÏ”›ORa¿qlMÒ%[Î∆uW[˜˝m]u”ïÆ≠LW≥˘BÒbÄâP»ÊLÑ&CÚ0Òv‡p‡§îÃ¡BBíFî[‰9ÏP[W≠µn⁄⁄˘Ï˚<˚Ìyû€ÁËàF£—hâ¡`¸·K°P#ïÍr√µÒëvqQo∂ ÷Â'6€”ÁéeßÀÓr;@ü
+π}‰«¸p"N¬ëWëË&ÇnEcTi4˛cO«∞◊ﬂ£fÍ6F∞ åÇ…(öœf™U«Îızsëd„_ ÎDÉlád•RÀ>FR˘H∆ì*Ñrü"Öºãﬁ¬"îØsﬁÌ2∏Urß˜=o>x3ï@ˆ3Zƒ7ˆ…Xâàq¥{á'ãDbè¿äxå:)Ò={Obe2V&√%"∏ã{væ86´+Ò2 f‰FÔ∏ê…Áu›√iâR¬õrö	Ó E<µD§S» ÌÃ3£¡i5≠€-ê”ñø‹I°€,!êÀ≥jÌKÎ6À™y¡∫†7È5≥
+)wttË˙ç€7\ÆV•¥öM∏Üº∞ı{¸Ó5« í	òü’®ße“©IÒ$ü'ÊOà¯\ØÇ√„éçèè‹º6vg@£€-»aröÁå*ÒúÏûJƒÈªz˘¬˘ﬁ”=Ãﬁ3}W.πœ¯%®W‹ÍøxÓlwÎ±vf´≠ÖÕ:ﬁŸﬁJ’≈f6£Üﬂ÷ÕfRùÏ8—”ŸFÌøå∫˙Ÿ©.˝ªi4çF˚}  ˇˇÏó[oiÄª&∆ÆıP´wﬁôØ¸ÔºÙÏ›˛ÅM<d≥Ym\MÎn@•-`AvLÅñCãîR¶00Ã0“ë∂*∂Z,áEc⁄2√Ã†_%k‘ƒDØå…<y.fﬁÔ˝Ên

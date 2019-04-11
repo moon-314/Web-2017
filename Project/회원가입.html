@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html lang='en'>
+
+<head>
+  <meta charset="utf-8" />
+  <title>마 ! 함 해보입시다</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- 주소창 icon -->
+</head>
+
+<style>
+  body {
+    background: url(intro배경1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: NanumGothic;
+    src: url(NanumFont_TTF_ALL/NanumGothic.ttf) format('truetype');
+  }
+
+  div {
+    position: relative;
+    padding: 10px 0;
+    color: #2d2c2d;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    width: auto;
+    top: 180px;
+    margin: auto;
+  }
+
+  .sign {
+    position: relative;
+    width: 400px;
+    height: 380px;
+    border: 1px solid ##F5DA81;
+    background: #fff;
+    text-align: center;
+    padding: 80px 0px;
+    opacity: 0.75;
+  }
+
+  .p1 {
+    font-size: 50px;
+    color: gray;
+  }
+
+  .f {
+    overflow: hidden;
+    width: auto;
+  }
+
+  form label {
+    margin-right: 10px;
+    margin-top: 15px;
+  }
+</style>
+
+<body>
+
+  <div class="sign">
+    <span class="p1">회원가입</span>
+    <br></br>
+    <br></br>
+    <form method = "get">
+      <label for="name">NAME</label>
+      <input type="text" id="Name" name="name" style="margin-left:4px;height: 20px;" required>
+      <br></br>
+      <label for="id">ID</label>
+      <input type="text" id="Id" name="id" style="margin-left:26px;height: 20px;" required>
+      <br></br>
+      <label for="pw">PW</label>
+      <input type="password" id="Pw" name="pw" style="margin-left:22px;height: 20px;" required>
+      <br></br>
+      <label for="pck">Re.PW</label>
+      <input type="password" id="PwCheck" style="height: 20px;" required>
+      <br></br>
+      <p id="pwsame" style="color:red;"></p>
+
+      <br></br>
+
+      <input type="button" onclick="tocheckpw2()" value="가입하기">
+      <input type="reset" value="다시쓰기">
+      <input type="button" value="GUEST" onclick="location.href='main.html'" title="Guest는 여기로" style="height:25px;">
+      <input type="button" value="intro" onclick="location.href='intro.html'" style="height:25px;">
+    </form>
+
+  </div>
+
+  <script type="text/javascript">
+    function tocheckpw2() {
+      var pw = document.getElementById("Pw").value;
+      var pwck = document.getElementById("PwCheck").value;
+
+      if (pw != pwck) {
+        document.getElementById('pwsame').innerHTML = '비밀번호가 틀렸습니다. 다시 입력해 주세요.';
+        return false;
+      }
+      else {
+        document.getElementById('pwsame').style.color= 'blue';
+        document.getElementById('pwsame').innerHTML= '비밀번호가 일치합니다.';
+        window.location.href='main.html';
+      }
+    }
+  </script>
+
+</body>
+
+</html>
